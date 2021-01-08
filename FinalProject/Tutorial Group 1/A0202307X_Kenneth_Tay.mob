@@ -1,0 +1,1593 @@
+{
+    "name": "A0202307X_Kenneth_Tay",
+    "author": "new_user",
+    "flowchart": {
+        "id": "959e015f-26ca-0323-be47-6de53b2757f6",
+        "name": "Untitled",
+        "description": "",
+        "language": "js",
+        "meta": {
+            "selected_nodes": [
+                0
+            ]
+        },
+        "nodes": [
+            {
+                "name": "Start",
+                "id": "node_d4m1s5z1m66",
+                "position": {
+                    "x": 5340,
+                    "y": 4980
+                },
+                "enabled": true,
+                "type": "start",
+                "procedure": [
+                    {
+                        "type": 13,
+                        "ID": "",
+                        "meta": {
+                            "name": "",
+                            "module": ""
+                        },
+                        "argCount": 0,
+                        "args": [],
+                        "print": false,
+                        "enabled": true,
+                        "selected": false,
+                        "selectGeom": false,
+                        "hasError": false
+                    },
+                    {
+                        "type": 10,
+                        "ID": "prod-92cmcjinfbi",
+                        "enabled": true,
+                        "print": false,
+                        "argCount": 2,
+                        "meta": {
+                            "module": "Input",
+                            "name": "Constant",
+                            "inputMode": 1,
+                            "description": ""
+                        },
+                        "args": [
+                            {
+                                "name": "const_name",
+                                "value": "num_x",
+                                "jsValue": "num_x_",
+                                "invalidVar": false,
+                                "linked": false
+                            },
+                            {
+                                "name": "__input__",
+                                "value": 30,
+                                "linked": false,
+                                "max": "30",
+                                "min": "5"
+                            }
+                        ],
+                        "selected": false,
+                        "hasError": false
+                    },
+                    {
+                        "type": 10,
+                        "ID": "prod-otmvm0rq5jo",
+                        "enabled": true,
+                        "print": false,
+                        "argCount": 2,
+                        "meta": {
+                            "module": "Input",
+                            "name": "Constant",
+                            "inputMode": 1,
+                            "description": ""
+                        },
+                        "args": [
+                            {
+                                "name": "const_name",
+                                "value": "num_z",
+                                "jsValue": "num_z_",
+                                "invalidVar": false,
+                                "linked": false
+                            },
+                            {
+                                "name": "__input__",
+                                "value": 10,
+                                "linked": false,
+                                "max": "10",
+                                "min": "5"
+                            }
+                        ],
+                        "selected": false,
+                        "selectGeom": false,
+                        "hasError": false
+                    },
+                    {
+                        "type": 10,
+                        "ID": "prod-ggu4a4tnt4n",
+                        "enabled": true,
+                        "print": false,
+                        "argCount": 2,
+                        "meta": {
+                            "module": "Input",
+                            "name": "Constant",
+                            "inputMode": 1,
+                            "description": ""
+                        },
+                        "args": [
+                            {
+                                "name": "const_name",
+                                "value": "num_open",
+                                "invalidVar": false,
+                                "jsValue": "num_open_",
+                                "linked": false
+                            },
+                            {
+                                "name": "__input__",
+                                "value": 50,
+                                "max": "100",
+                                "linked": false,
+                                "min": ""
+                            }
+                        ],
+                        "selected": false,
+                        "hasError": false
+                    }
+                ],
+                "state": {
+                    "procedure": []
+                },
+                "input": {
+                    "name": "input",
+                    "type": 0,
+                    "edges": [],
+                    "meta": {
+                        "mode": 0,
+                        "opts": {}
+                    },
+                    "parentNode": "~flowchart~nodes~0"
+                },
+                "output": {
+                    "name": "output",
+                    "type": 1,
+                    "edges": [
+                        {
+                            "source": "~flowchart~nodes~0~output",
+                            "target": {
+                                "name": "input",
+                                "type": 0,
+                                "edges": [
+                                    "~flowchart~nodes~0~output~edges~0"
+                                ],
+                                "meta": {
+                                    "mode": 0,
+                                    "opts": {}
+                                },
+                                "parentNode": {
+                                    "name": "FACADE",
+                                    "id": "node_n9o6hzutnb",
+                                    "position": {
+                                        "x": 5240,
+                                        "y": 5180
+                                    },
+                                    "enabled": true,
+                                    "type": "",
+                                    "procedure": [
+                                        {
+                                            "type": 13,
+                                            "ID": "",
+                                            "meta": {
+                                                "name": "",
+                                                "module": ""
+                                            },
+                                            "argCount": 0,
+                                            "args": [],
+                                            "print": false,
+                                            "enabled": true,
+                                            "selected": false,
+                                            "selectGeom": false,
+                                            "hasError": false
+                                        },
+                                        {
+                                            "type": 8,
+                                            "ID": "prod-xis76u49i9j",
+                                            "enabled": true,
+                                            "print": false,
+                                            "meta": {
+                                                "module": "pattern",
+                                                "name": "Grid"
+                                            },
+                                            "argCount": 6,
+                                            "args": [
+                                                {
+                                                    "name": "var_name",
+                                                    "value": "grid_pos",
+                                                    "invalidVar": false,
+                                                    "jsValue": "grid_pos_",
+                                                    "linked": false
+                                                },
+                                                {
+                                                    "name": "__model__",
+                                                    "linked": false
+                                                },
+                                                {
+                                                    "name": "origin",
+                                                    "value": "XZ",
+                                                    "linked": false,
+                                                    "jsValue": "JSON.parse(JSON.stringify(XZ))",
+                                                    "usedVars": [],
+                                                    "invalidVar": false
+                                                },
+                                                {
+                                                    "name": "size",
+                                                    "value": "[num_x, num_z]",
+                                                    "linked": false,
+                                                    "jsValue": "[num_x_, num_z_]",
+                                                    "usedVars": [
+                                                        "num_z",
+                                                        "num_x"
+                                                    ],
+                                                    "invalidVar": false
+                                                },
+                                                {
+                                                    "name": "num_positions",
+                                                    "value": "[num_x, num_z]",
+                                                    "linked": false,
+                                                    "jsValue": "[num_x_, num_z_]",
+                                                    "usedVars": [
+                                                        "num_z",
+                                                        "num_x"
+                                                    ],
+                                                    "invalidVar": false
+                                                },
+                                                {
+                                                    "name": "method",
+                                                    "value": "'squares'",
+                                                    "jsValue": "'squares'",
+                                                    "usedVars": [],
+                                                    "invalidVar": false,
+                                                    "linked": false
+                                                }
+                                            ],
+                                            "selected": false,
+                                            "variable": "grid_pos",
+                                            "hasError": false,
+                                            "selectGeom": false
+                                        },
+                                        {
+                                            "type": 8,
+                                            "ID": "prod-6zz6ill9g18",
+                                            "enabled": true,
+                                            "print": false,
+                                            "meta": {
+                                                "module": "make",
+                                                "name": "Polygon"
+                                            },
+                                            "argCount": 3,
+                                            "args": [
+                                                {
+                                                    "name": "var_name",
+                                                    "value": "grid_pgon",
+                                                    "linked": false,
+                                                    "invalidVar": false,
+                                                    "jsValue": "grid_pgon_"
+                                                },
+                                                {
+                                                    "name": "__model__",
+                                                    "linked": false
+                                                },
+                                                {
+                                                    "name": "entities",
+                                                    "value": "grid_pos",
+                                                    "linked": false,
+                                                    "jsValue": "grid_pos_",
+                                                    "usedVars": [
+                                                        "grid_pos"
+                                                    ],
+                                                    "invalidVar": false
+                                                }
+                                            ],
+                                            "selected": false,
+                                            "variable": "grid_pgon",
+                                            "hasError": false
+                                        },
+                                        {
+                                            "type": 8,
+                                            "ID": "prod-w8pmpl25gt9",
+                                            "enabled": true,
+                                            "print": false,
+                                            "meta": {
+                                                "module": "make",
+                                                "name": "Unweld"
+                                            },
+                                            "argCount": 3,
+                                            "args": [
+                                                {
+                                                    "name": "var_name",
+                                                    "value": "unweld",
+                                                    "invalidVar": false,
+                                                    "jsValue": "unweld_",
+                                                    "linked": false
+                                                },
+                                                {
+                                                    "name": "__model__",
+                                                    "linked": false
+                                                },
+                                                {
+                                                    "name": "entities",
+                                                    "value": "grid_pgon",
+                                                    "linked": false,
+                                                    "jsValue": "grid_pgon_",
+                                                    "usedVars": [
+                                                        "grid_pgon"
+                                                    ],
+                                                    "invalidVar": false
+                                                }
+                                            ],
+                                            "selected": false,
+                                            "variable": "unweld",
+                                            "hasError": false
+                                        },
+                                        {
+                                            "type": 0,
+                                            "ID": "prod-d53snev9eub",
+                                            "enabled": true,
+                                            "print": false,
+                                            "argCount": 2,
+                                            "args": [
+                                                {
+                                                    "name": "var_name",
+                                                    "value": "open_pan",
+                                                    "linked": false,
+                                                    "invalidVar": false,
+                                                    "jsValue": "open_pan_"
+                                                },
+                                                {
+                                                    "name": "value",
+                                                    "value": "randPick(grid_pgon, num_open)",
+                                                    "jsValue": "randPick(grid_pgon_, num_open_)",
+                                                    "invalidVar": false,
+                                                    "linked": false,
+                                                    "usedVars": [
+                                                        "num_open",
+                                                        "grid_pgon"
+                                                    ]
+                                                }
+                                            ],
+                                            "selected": false,
+                                            "variable": "open_pan",
+                                            "hasError": false
+                                        },
+                                        {
+                                            "type": 8,
+                                            "ID": "prod-ba5q9bub2sb",
+                                            "enabled": true,
+                                            "print": false,
+                                            "meta": {
+                                                "module": "modify",
+                                                "name": "Move"
+                                            },
+                                            "argCount": 4,
+                                            "args": [
+                                                {
+                                                    "name": "__none__",
+                                                    "linked": false
+                                                },
+                                                {
+                                                    "name": "__model__",
+                                                    "linked": false
+                                                },
+                                                {
+                                                    "name": "entities",
+                                                    "value": "grid_pgon",
+                                                    "jsValue": "grid_pgon_",
+                                                    "usedVars": [
+                                                        "grid_pgon"
+                                                    ],
+                                                    "invalidVar": false,
+                                                    "linked": false
+                                                },
+                                                {
+                                                    "name": "vectors",
+                                                    "value": "[0, 5.2, ((num_z / 2) + 5)]",
+                                                    "jsValue": "[0, 5.2, ((num_z_ / 2) + 5)]",
+                                                    "usedVars": [
+                                                        "num_z"
+                                                    ],
+                                                    "invalidVar": false,
+                                                    "linked": false
+                                                }
+                                            ],
+                                            "selected": false,
+                                            "hasError": false,
+                                            "selectGeom": false
+                                        },
+                                        {
+                                            "type": 14,
+                                            "ID": "prod-88f6gfx0s5f",
+                                            "enabled": true,
+                                            "print": false,
+                                            "argCount": 1,
+                                            "args": [
+                                                {
+                                                    "name": "comment",
+                                                    "value": "Rotate panels selected at random",
+                                                    "linked": false
+                                                }
+                                            ],
+                                            "selected": false
+                                        },
+                                        {
+                                            "type": 4,
+                                            "ID": "prod-hbpceyol2r",
+                                            "enabled": true,
+                                            "print": false,
+                                            "argCount": 2,
+                                            "args": [
+                                                {
+                                                    "name": "item",
+                                                    "value": "panel",
+                                                    "linked": false,
+                                                    "invalidVar": false,
+                                                    "jsValue": "panel_"
+                                                },
+                                                {
+                                                    "name": "list",
+                                                    "value": "open_pan",
+                                                    "linked": false,
+                                                    "jsValue": "open_pan_",
+                                                    "usedVars": [
+                                                        "open_pan"
+                                                    ],
+                                                    "invalidVar": false
+                                                }
+                                            ],
+                                            "children": [
+                                                {
+                                                    "type": 13,
+                                                    "ID": "",
+                                                    "parent": "~flowchart~nodes~0~output~edges~0~target~parentNode~procedure~7",
+                                                    "meta": {
+                                                        "name": "",
+                                                        "module": ""
+                                                    },
+                                                    "argCount": 0,
+                                                    "args": [],
+                                                    "print": false,
+                                                    "enabled": true,
+                                                    "selected": false,
+                                                    "selectGeom": false,
+                                                    "hasError": false
+                                                },
+                                                {
+                                                    "type": 8,
+                                                    "parent": "~flowchart~nodes~0~output~edges~0~target~parentNode~procedure~7",
+                                                    "ID": "prod-peq6exfullf",
+                                                    "enabled": true,
+                                                    "print": false,
+                                                    "meta": {
+                                                        "module": "calc",
+                                                        "name": "Centroid"
+                                                    },
+                                                    "argCount": 3,
+                                                    "args": [
+                                                        {
+                                                            "name": "var_name",
+                                                            "value": "panel_cent",
+                                                            "invalidVar": false,
+                                                            "jsValue": "panel_cent_",
+                                                            "linked": false
+                                                        },
+                                                        {
+                                                            "name": "__model__",
+                                                            "linked": false
+                                                        },
+                                                        {
+                                                            "name": "entities",
+                                                            "value": "panel",
+                                                            "linked": false,
+                                                            "jsValue": "panel_",
+                                                            "usedVars": [
+                                                                "panel"
+                                                            ],
+                                                            "invalidVar": false
+                                                        }
+                                                    ],
+                                                    "selected": false,
+                                                    "variable": "panel_cent",
+                                                    "hasError": false
+                                                },
+                                                {
+                                                    "type": 8,
+                                                    "ID": "prod-umnxd7tfais",
+                                                    "enabled": true,
+                                                    "print": false,
+                                                    "meta": {
+                                                        "module": "modify",
+                                                        "name": "Rotate"
+                                                    },
+                                                    "argCount": 6,
+                                                    "args": [
+                                                        {
+                                                            "name": "__none__",
+                                                            "linked": false
+                                                        },
+                                                        {
+                                                            "name": "__model__",
+                                                            "linked": false
+                                                        },
+                                                        {
+                                                            "name": "entities",
+                                                            "linked": false,
+                                                            "value": "panel",
+                                                            "jsValue": "panel_",
+                                                            "usedVars": [
+                                                                "panel"
+                                                            ],
+                                                            "invalidVar": false
+                                                        },
+                                                        {
+                                                            "name": "origin",
+                                                            "linked": false,
+                                                            "value": "panel_cent",
+                                                            "jsValue": "panel_cent_",
+                                                            "usedVars": [
+                                                                "panel_cent"
+                                                            ],
+                                                            "invalidVar": false
+                                                        },
+                                                        {
+                                                            "name": "axis",
+                                                            "linked": false,
+                                                            "value": "[0, 0, 1]",
+                                                            "jsValue": "[0, 0, 1]",
+                                                            "usedVars": [],
+                                                            "invalidVar": false
+                                                        },
+                                                        {
+                                                            "name": "angle",
+                                                            "linked": false,
+                                                            "value": "rand(0, PI)",
+                                                            "jsValue": "rand(0, JSON.parse(JSON.stringify(PI)))",
+                                                            "usedVars": [],
+                                                            "invalidVar": false
+                                                        }
+                                                    ],
+                                                    "selected": false,
+                                                    "selectGeom": false,
+                                                    "parent": "~flowchart~nodes~0~output~edges~0~target~parentNode~procedure~7",
+                                                    "hasError": false
+                                                }
+                                            ],
+                                            "selected": false,
+                                            "variable": "panel",
+                                            "hasError": false
+                                        },
+                                        {
+                                            "type": 0,
+                                            "ID": "prod-0kgvw4vg30g",
+                                            "enabled": true,
+                                            "print": false,
+                                            "argCount": 2,
+                                            "args": [
+                                                {
+                                                    "name": "var_name",
+                                                    "value": "full_lst",
+                                                    "invalidVar": false,
+                                                    "jsValue": "full_lst_",
+                                                    "linked": false
+                                                },
+                                                {
+                                                    "name": "value",
+                                                    "value": "[]",
+                                                    "linked": false,
+                                                    "jsValue": "[]",
+                                                    "usedVars": [],
+                                                    "invalidVar": false
+                                                }
+                                            ],
+                                            "selected": false,
+                                            "variable": "full_lst",
+                                            "hasError": false
+                                        },
+                                        {
+                                            "type": 14,
+                                            "ID": "prod-wzvzdfdnse",
+                                            "enabled": true,
+                                            "print": false,
+                                            "argCount": 1,
+                                            "args": [
+                                                {
+                                                    "name": "comment",
+                                                    "value": "Extrude panels including rotated elements",
+                                                    "linked": false
+                                                }
+                                            ],
+                                            "selected": false
+                                        },
+                                        {
+                                            "type": 4,
+                                            "ID": "prod-p6fmodffx3",
+                                            "enabled": true,
+                                            "print": false,
+                                            "argCount": 2,
+                                            "args": [
+                                                {
+                                                    "name": "item",
+                                                    "value": "window",
+                                                    "linked": false,
+                                                    "invalidVar": false,
+                                                    "jsValue": "window_"
+                                                },
+                                                {
+                                                    "name": "list",
+                                                    "value": "grid_pgon",
+                                                    "linked": false,
+                                                    "jsValue": "grid_pgon_",
+                                                    "usedVars": [
+                                                        "grid_pgon"
+                                                    ],
+                                                    "invalidVar": false
+                                                }
+                                            ],
+                                            "children": [
+                                                {
+                                                    "type": 13,
+                                                    "ID": "",
+                                                    "parent": "~flowchart~nodes~0~output~edges~0~target~parentNode~procedure~10",
+                                                    "meta": {
+                                                        "name": "",
+                                                        "module": ""
+                                                    },
+                                                    "argCount": 0,
+                                                    "args": [],
+                                                    "print": false,
+                                                    "enabled": true,
+                                                    "selected": false,
+                                                    "selectGeom": false,
+                                                    "hasError": false
+                                                },
+                                                {
+                                                    "type": 0,
+                                                    "parent": "~flowchart~nodes~0~output~edges~0~target~parentNode~procedure~10",
+                                                    "ID": "prod-c6w6lnrx7k4",
+                                                    "enabled": true,
+                                                    "print": false,
+                                                    "argCount": 2,
+                                                    "args": [
+                                                        {
+                                                            "name": "var_name",
+                                                            "value": "sub_lst",
+                                                            "invalidVar": false,
+                                                            "jsValue": "sub_lst_",
+                                                            "linked": false
+                                                        },
+                                                        {
+                                                            "name": "value",
+                                                            "value": "[]",
+                                                            "linked": false,
+                                                            "jsValue": "[]",
+                                                            "usedVars": [],
+                                                            "invalidVar": false
+                                                        }
+                                                    ],
+                                                    "selected": false,
+                                                    "variable": "sub_lst",
+                                                    "hasError": false
+                                                },
+                                                {
+                                                    "type": 8,
+                                                    "parent": "~flowchart~nodes~0~output~edges~0~target~parentNode~procedure~10",
+                                                    "ID": "prod-5vs7jflei67",
+                                                    "enabled": true,
+                                                    "print": false,
+                                                    "meta": {
+                                                        "module": "calc",
+                                                        "name": "Normal"
+                                                    },
+                                                    "argCount": 4,
+                                                    "args": [
+                                                        {
+                                                            "name": "var_name",
+                                                            "value": "norm",
+                                                            "linked": false,
+                                                            "invalidVar": false,
+                                                            "jsValue": "norm_"
+                                                        },
+                                                        {
+                                                            "name": "__model__",
+                                                            "linked": false
+                                                        },
+                                                        {
+                                                            "name": "entities",
+                                                            "value": "window",
+                                                            "linked": false,
+                                                            "jsValue": "window_",
+                                                            "usedVars": [
+                                                                "window"
+                                                            ],
+                                                            "invalidVar": false
+                                                        },
+                                                        {
+                                                            "name": "scale",
+                                                            "value": "0.2",
+                                                            "jsValue": "0.2",
+                                                            "usedVars": [],
+                                                            "invalidVar": false,
+                                                            "linked": false
+                                                        }
+                                                    ],
+                                                    "selected": false,
+                                                    "variable": "norm",
+                                                    "hasError": false
+                                                },
+                                                {
+                                                    "type": 8,
+                                                    "parent": "~flowchart~nodes~0~output~edges~0~target~parentNode~procedure~10",
+                                                    "ID": "prod-whsolte0b5d",
+                                                    "enabled": true,
+                                                    "print": false,
+                                                    "meta": {
+                                                        "module": "make",
+                                                        "name": "Extrude"
+                                                    },
+                                                    "argCount": 6,
+                                                    "args": [
+                                                        {
+                                                            "name": "var_name",
+                                                            "value": "extr",
+                                                            "linked": false,
+                                                            "invalidVar": false,
+                                                            "jsValue": "extr_"
+                                                        },
+                                                        {
+                                                            "name": "__model__",
+                                                            "linked": false
+                                                        },
+                                                        {
+                                                            "name": "entities",
+                                                            "value": "window",
+                                                            "jsValue": "window_",
+                                                            "usedVars": [
+                                                                "window"
+                                                            ],
+                                                            "invalidVar": false,
+                                                            "linked": false
+                                                        },
+                                                        {
+                                                            "name": "distance",
+                                                            "value": "norm",
+                                                            "invalidVar": false,
+                                                            "linked": false,
+                                                            "jsValue": "norm_",
+                                                            "usedVars": [
+                                                                "norm"
+                                                            ]
+                                                        },
+                                                        {
+                                                            "name": "divisions",
+                                                            "value": "1",
+                                                            "jsValue": "1",
+                                                            "usedVars": [],
+                                                            "invalidVar": false,
+                                                            "linked": false
+                                                        },
+                                                        {
+                                                            "name": "method",
+                                                            "value": "'quads'",
+                                                            "jsValue": "'quads'",
+                                                            "usedVars": [],
+                                                            "invalidVar": false,
+                                                            "linked": false
+                                                        }
+                                                    ],
+                                                    "selected": false,
+                                                    "variable": "extr",
+                                                    "hasError": false
+                                                },
+                                                {
+                                                    "type": 8,
+                                                    "parent": "~flowchart~nodes~0~output~edges~0~target~parentNode~procedure~10",
+                                                    "ID": "prod-bydx44b913f",
+                                                    "enabled": true,
+                                                    "print": false,
+                                                    "meta": {
+                                                        "module": "list",
+                                                        "name": "Add"
+                                                    },
+                                                    "argCount": 4,
+                                                    "args": [
+                                                        {
+                                                            "name": "__none__",
+                                                            "linked": false
+                                                        },
+                                                        {
+                                                            "name": "list",
+                                                            "value": "sub_lst",
+                                                            "jsValue": "sub_lst_",
+                                                            "usedVars": [
+                                                                "sub_lst"
+                                                            ],
+                                                            "invalidVar": false,
+                                                            "linked": false
+                                                        },
+                                                        {
+                                                            "name": "item",
+                                                            "value": "[window, extr]",
+                                                            "linked": false,
+                                                            "jsValue": "[window_, extr_]",
+                                                            "usedVars": [
+                                                                "extr",
+                                                                "window"
+                                                            ],
+                                                            "invalidVar": false
+                                                        },
+                                                        {
+                                                            "name": "method",
+                                                            "value": "'to_end'",
+                                                            "jsValue": "'to_end'",
+                                                            "linked": false,
+                                                            "usedVars": [],
+                                                            "invalidVar": false
+                                                        }
+                                                    ],
+                                                    "selected": false,
+                                                    "hasError": false
+                                                },
+                                                {
+                                                    "type": 8,
+                                                    "parent": "~flowchart~nodes~0~output~edges~0~target~parentNode~procedure~10",
+                                                    "ID": "prod-0tgx2yd89gbq",
+                                                    "enabled": true,
+                                                    "print": false,
+                                                    "meta": {
+                                                        "module": "list",
+                                                        "name": "Add"
+                                                    },
+                                                    "argCount": 4,
+                                                    "args": [
+                                                        {
+                                                            "name": "__none__",
+                                                            "linked": false
+                                                        },
+                                                        {
+                                                            "name": "list",
+                                                            "value": "full_lst",
+                                                            "jsValue": "full_lst_",
+                                                            "usedVars": [
+                                                                "full_lst"
+                                                            ],
+                                                            "invalidVar": false,
+                                                            "linked": false
+                                                        },
+                                                        {
+                                                            "name": "item",
+                                                            "value": "sub_lst",
+                                                            "linked": false,
+                                                            "jsValue": "sub_lst_",
+                                                            "usedVars": [
+                                                                "sub_lst"
+                                                            ],
+                                                            "invalidVar": false
+                                                        },
+                                                        {
+                                                            "name": "method",
+                                                            "value": "'to_end'",
+                                                            "jsValue": "'to_end'",
+                                                            "linked": false,
+                                                            "usedVars": [],
+                                                            "invalidVar": false
+                                                        }
+                                                    ],
+                                                    "selected": false,
+                                                    "hasError": false
+                                                }
+                                            ],
+                                            "selected": false,
+                                            "variable": "window",
+                                            "hasError": false
+                                        },
+                                        {
+                                            "type": 14,
+                                            "ID": "prod-hj52jqxbr2l",
+                                            "enabled": true,
+                                            "print": false,
+                                            "argCount": 1,
+                                            "args": [
+                                                {
+                                                    "name": "comment",
+                                                    "value": "Render panels in random colors ranging from black to green"
+                                                }
+                                            ],
+                                            "selected": false
+                                        },
+                                        {
+                                            "type": 4,
+                                            "ID": "prod-wxlzw8wt8eq",
+                                            "enabled": true,
+                                            "print": false,
+                                            "argCount": 2,
+                                            "args": [
+                                                {
+                                                    "name": "item",
+                                                    "value": "green_pan",
+                                                    "invalidVar": false,
+                                                    "jsValue": "green_pan_",
+                                                    "linked": false
+                                                },
+                                                {
+                                                    "name": "list",
+                                                    "value": "full_lst",
+                                                    "linked": false,
+                                                    "jsValue": "full_lst_",
+                                                    "usedVars": [
+                                                        "full_lst"
+                                                    ],
+                                                    "invalidVar": false
+                                                }
+                                            ],
+                                            "children": [
+                                                {
+                                                    "type": 13,
+                                                    "ID": "",
+                                                    "parent": "~flowchart~nodes~0~output~edges~0~target~parentNode~procedure~12",
+                                                    "meta": {
+                                                        "name": "",
+                                                        "module": ""
+                                                    },
+                                                    "argCount": 0,
+                                                    "args": [],
+                                                    "print": false,
+                                                    "enabled": true,
+                                                    "selected": false,
+                                                    "selectGeom": false,
+                                                    "hasError": false
+                                                },
+                                                {
+                                                    "type": 0,
+                                                    "ID": "prod-6u6eqzgt3b",
+                                                    "enabled": true,
+                                                    "print": false,
+                                                    "argCount": 2,
+                                                    "args": [
+                                                        {
+                                                            "name": "var_name",
+                                                            "value": "rand_green",
+                                                            "invalidVar": false,
+                                                            "jsValue": "rand_green_",
+                                                            "linked": false
+                                                        },
+                                                        {
+                                                            "name": "value",
+                                                            "value": "[0, rand(0, 1), 0]",
+                                                            "linked": false,
+                                                            "invalidVar": false,
+                                                            "jsValue": "[0, rand(0, 1), 0]",
+                                                            "usedVars": []
+                                                        }
+                                                    ],
+                                                    "selected": false,
+                                                    "variable": "rand_green",
+                                                    "hasError": false,
+                                                    "selectGeom": false,
+                                                    "parent": "~flowchart~nodes~0~output~edges~0~target~parentNode~procedure~12"
+                                                },
+                                                {
+                                                    "type": 8,
+                                                    "ID": "prod-dhcy8g6pvl7",
+                                                    "enabled": true,
+                                                    "print": false,
+                                                    "meta": {
+                                                        "module": "render",
+                                                        "name": "Color"
+                                                    },
+                                                    "argCount": 4,
+                                                    "args": [
+                                                        {
+                                                            "name": "__none__",
+                                                            "linked": false
+                                                        },
+                                                        {
+                                                            "name": "__model__",
+                                                            "linked": false
+                                                        },
+                                                        {
+                                                            "name": "entities",
+                                                            "value": "green_pan",
+                                                            "linked": false,
+                                                            "jsValue": "green_pan_",
+                                                            "usedVars": [
+                                                                "green_pan"
+                                                            ],
+                                                            "invalidVar": false
+                                                        },
+                                                        {
+                                                            "name": "color",
+                                                            "value": "rand_green",
+                                                            "jsValue": "rand_green_",
+                                                            "usedVars": [
+                                                                "rand_green"
+                                                            ],
+                                                            "invalidVar": false,
+                                                            "linked": false
+                                                        }
+                                                    ],
+                                                    "selected": false,
+                                                    "hasError": false,
+                                                    "selectGeom": false,
+                                                    "parent": "~flowchart~nodes~0~output~edges~0~target~parentNode~procedure~12"
+                                                }
+                                            ],
+                                            "variable": "green_pan",
+                                            "hasError": false,
+                                            "selected": false
+                                        }
+                                    ],
+                                    "state": {
+                                        "procedure": []
+                                    },
+                                    "input": "~flowchart~nodes~0~output~edges~0~target",
+                                    "output": {
+                                        "name": "output",
+                                        "type": 1,
+                                        "edges": [
+                                            {
+                                                "source": "~flowchart~nodes~0~output~edges~0~target~parentNode~output",
+                                                "target": {
+                                                    "name": "input",
+                                                    "type": 0,
+                                                    "edges": [
+                                                        "~flowchart~nodes~0~output~edges~0~target~parentNode~output~edges~0",
+                                                        {
+                                                            "source": {
+                                                                "name": "output",
+                                                                "type": 1,
+                                                                "edges": [
+                                                                    "~flowchart~nodes~0~output~edges~0~target~parentNode~output~edges~0~target~edges~1"
+                                                                ],
+                                                                "meta": {
+                                                                    "mode": 0
+                                                                },
+                                                                "parentNode": {
+                                                                    "name": "BUILDING",
+                                                                    "id": "node_p6p608hi6tg",
+                                                                    "position": {
+                                                                        "x": 5460,
+                                                                        "y": 5180
+                                                                    },
+                                                                    "enabled": true,
+                                                                    "type": "",
+                                                                    "procedure": [
+                                                                        {
+                                                                            "type": 13,
+                                                                            "ID": "",
+                                                                            "meta": {
+                                                                                "name": "",
+                                                                                "module": ""
+                                                                            },
+                                                                            "argCount": 0,
+                                                                            "args": [],
+                                                                            "print": false,
+                                                                            "enabled": true,
+                                                                            "selected": false,
+                                                                            "selectGeom": false,
+                                                                            "hasError": false
+                                                                        },
+                                                                        {
+                                                                            "type": 8,
+                                                                            "ID": "prod-3rgm0225apt",
+                                                                            "enabled": true,
+                                                                            "print": false,
+                                                                            "meta": {
+                                                                                "module": "pattern",
+                                                                                "name": "Rectangle"
+                                                                            },
+                                                                            "argCount": 4,
+                                                                            "args": [
+                                                                                {
+                                                                                    "name": "var_name",
+                                                                                    "value": "building_pos",
+                                                                                    "linked": false,
+                                                                                    "invalidVar": false,
+                                                                                    "jsValue": "building_pos_"
+                                                                                },
+                                                                                {
+                                                                                    "name": "__model__",
+                                                                                    "linked": false
+                                                                                },
+                                                                                {
+                                                                                    "name": "origin",
+                                                                                    "value": "XY",
+                                                                                    "jsValue": "JSON.parse(JSON.stringify(XY))",
+                                                                                    "invalidVar": false,
+                                                                                    "linked": false,
+                                                                                    "usedVars": []
+                                                                                },
+                                                                                {
+                                                                                    "name": "size",
+                                                                                    "value": "[num_x, 10]",
+                                                                                    "linked": false,
+                                                                                    "jsValue": "[num_x_, 10]",
+                                                                                    "usedVars": [
+                                                                                        "num_x"
+                                                                                    ],
+                                                                                    "invalidVar": false
+                                                                                }
+                                                                            ],
+                                                                            "selected": false,
+                                                                            "variable": "building_pos",
+                                                                            "hasError": false,
+                                                                            "selectGeom": false
+                                                                        },
+                                                                        {
+                                                                            "type": 8,
+                                                                            "ID": "prod-x2y5hblre78",
+                                                                            "enabled": true,
+                                                                            "print": false,
+                                                                            "meta": {
+                                                                                "module": "make",
+                                                                                "name": "Polygon"
+                                                                            },
+                                                                            "argCount": 3,
+                                                                            "args": [
+                                                                                {
+                                                                                    "name": "var_name",
+                                                                                    "value": "building_pgon",
+                                                                                    "invalidVar": false,
+                                                                                    "jsValue": "building_pgon_",
+                                                                                    "linked": false
+                                                                                },
+                                                                                {
+                                                                                    "name": "__model__",
+                                                                                    "linked": false
+                                                                                },
+                                                                                {
+                                                                                    "name": "entities",
+                                                                                    "value": "building_pos",
+                                                                                    "jsValue": "building_pos_",
+                                                                                    "invalidVar": false,
+                                                                                    "linked": false,
+                                                                                    "usedVars": [
+                                                                                        "building_pos"
+                                                                                    ]
+                                                                                }
+                                                                            ],
+                                                                            "selected": false,
+                                                                            "variable": "building_pgon",
+                                                                            "hasError": false,
+                                                                            "selectGeom": false
+                                                                        },
+                                                                        {
+                                                                            "type": 8,
+                                                                            "ID": "prod-npjnbl7z8pj",
+                                                                            "enabled": true,
+                                                                            "print": false,
+                                                                            "meta": {
+                                                                                "module": "make",
+                                                                                "name": "Extrude"
+                                                                            },
+                                                                            "argCount": 6,
+                                                                            "args": [
+                                                                                {
+                                                                                    "name": "var_name",
+                                                                                    "value": "building_ext",
+                                                                                    "linked": false,
+                                                                                    "invalidVar": false,
+                                                                                    "jsValue": "building_ext_"
+                                                                                },
+                                                                                {
+                                                                                    "name": "__model__",
+                                                                                    "linked": false
+                                                                                },
+                                                                                {
+                                                                                    "name": "entities",
+                                                                                    "value": "building_pgon",
+                                                                                    "jsValue": "building_pgon_",
+                                                                                    "invalidVar": false,
+                                                                                    "linked": false,
+                                                                                    "usedVars": [
+                                                                                        "building_pgon"
+                                                                                    ]
+                                                                                },
+                                                                                {
+                                                                                    "name": "distance",
+                                                                                    "value": "num_z",
+                                                                                    "jsValue": "num_z_",
+                                                                                    "invalidVar": false,
+                                                                                    "linked": false,
+                                                                                    "usedVars": [
+                                                                                        "num_z"
+                                                                                    ]
+                                                                                },
+                                                                                {
+                                                                                    "name": "divisions",
+                                                                                    "value": "1",
+                                                                                    "jsValue": "1",
+                                                                                    "usedVars": [],
+                                                                                    "invalidVar": false,
+                                                                                    "linked": false
+                                                                                },
+                                                                                {
+                                                                                    "name": "method",
+                                                                                    "value": "'quads'",
+                                                                                    "jsValue": "'quads'",
+                                                                                    "usedVars": [],
+                                                                                    "invalidVar": false,
+                                                                                    "linked": false
+                                                                                }
+                                                                            ],
+                                                                            "selected": false,
+                                                                            "variable": "building_ext",
+                                                                            "hasError": false,
+                                                                            "selectGeom": false
+                                                                        },
+                                                                        {
+                                                                            "type": 8,
+                                                                            "ID": "prod-dicin4olwr",
+                                                                            "enabled": true,
+                                                                            "print": false,
+                                                                            "meta": {
+                                                                                "module": "modify",
+                                                                                "name": "Move"
+                                                                            },
+                                                                            "argCount": 4,
+                                                                            "args": [
+                                                                                {
+                                                                                    "name": "__none__",
+                                                                                    "linked": false
+                                                                                },
+                                                                                {
+                                                                                    "name": "__model__",
+                                                                                    "linked": false
+                                                                                },
+                                                                                {
+                                                                                    "name": "entities",
+                                                                                    "value": "building_ext",
+                                                                                    "linked": false,
+                                                                                    "jsValue": "building_ext_",
+                                                                                    "usedVars": [
+                                                                                        "building_ext"
+                                                                                    ],
+                                                                                    "invalidVar": false
+                                                                                },
+                                                                                {
+                                                                                    "name": "vectors",
+                                                                                    "value": "[0, 0, 5]",
+                                                                                    "linked": false,
+                                                                                    "invalidVar": false,
+                                                                                    "jsValue": "[0, 0, 5]",
+                                                                                    "usedVars": []
+                                                                                }
+                                                                            ],
+                                                                            "selected": false,
+                                                                            "hasError": false
+                                                                        },
+                                                                        {
+                                                                            "type": 8,
+                                                                            "ID": "prod-a3pni8jlrdp",
+                                                                            "enabled": true,
+                                                                            "print": false,
+                                                                            "meta": {
+                                                                                "module": "pattern",
+                                                                                "name": "Rectangle"
+                                                                            },
+                                                                            "argCount": 4,
+                                                                            "args": [
+                                                                                {
+                                                                                    "name": "var_name",
+                                                                                    "value": "building2_pos",
+                                                                                    "invalidVar": false,
+                                                                                    "jsValue": "building2_pos_",
+                                                                                    "linked": false
+                                                                                },
+                                                                                {
+                                                                                    "name": "__model__",
+                                                                                    "linked": false
+                                                                                },
+                                                                                {
+                                                                                    "name": "origin",
+                                                                                    "value": "XY",
+                                                                                    "linked": false,
+                                                                                    "jsValue": "JSON.parse(JSON.stringify(XY))",
+                                                                                    "usedVars": [],
+                                                                                    "invalidVar": false
+                                                                                },
+                                                                                {
+                                                                                    "name": "size",
+                                                                                    "value": "[num_x, 7.5]",
+                                                                                    "linked": false,
+                                                                                    "jsValue": "[num_x_, 7.5]",
+                                                                                    "usedVars": [
+                                                                                        "num_x"
+                                                                                    ],
+                                                                                    "invalidVar": false
+                                                                                }
+                                                                            ],
+                                                                            "selected": false,
+                                                                            "variable": "building2_pos",
+                                                                            "hasError": false
+                                                                        },
+                                                                        {
+                                                                            "type": 8,
+                                                                            "ID": "prod-8s6admabjed",
+                                                                            "enabled": true,
+                                                                            "print": false,
+                                                                            "meta": {
+                                                                                "module": "make",
+                                                                                "name": "Polygon"
+                                                                            },
+                                                                            "argCount": 3,
+                                                                            "args": [
+                                                                                {
+                                                                                    "name": "var_name",
+                                                                                    "value": "building2_pgon",
+                                                                                    "linked": false,
+                                                                                    "invalidVar": false,
+                                                                                    "jsValue": "building2_pgon_"
+                                                                                },
+                                                                                {
+                                                                                    "name": "__model__",
+                                                                                    "linked": false
+                                                                                },
+                                                                                {
+                                                                                    "name": "entities",
+                                                                                    "value": "building2_pos",
+                                                                                    "linked": false,
+                                                                                    "jsValue": "building2_pos_",
+                                                                                    "usedVars": [
+                                                                                        "building2_pos"
+                                                                                    ],
+                                                                                    "invalidVar": false
+                                                                                }
+                                                                            ],
+                                                                            "selected": false,
+                                                                            "variable": "building2_pgon",
+                                                                            "hasError": false
+                                                                        },
+                                                                        {
+                                                                            "type": 8,
+                                                                            "ID": "prod-aca9xfv75i",
+                                                                            "enabled": true,
+                                                                            "print": false,
+                                                                            "meta": {
+                                                                                "module": "make",
+                                                                                "name": "Extrude"
+                                                                            },
+                                                                            "argCount": 6,
+                                                                            "args": [
+                                                                                {
+                                                                                    "name": "var_name",
+                                                                                    "value": "building2_ext",
+                                                                                    "linked": false,
+                                                                                    "invalidVar": false,
+                                                                                    "jsValue": "building2_ext_"
+                                                                                },
+                                                                                {
+                                                                                    "name": "__model__",
+                                                                                    "linked": false
+                                                                                },
+                                                                                {
+                                                                                    "name": "entities",
+                                                                                    "value": "building2_pgon",
+                                                                                    "jsValue": "building2_pgon_",
+                                                                                    "invalidVar": false,
+                                                                                    "linked": false,
+                                                                                    "usedVars": [
+                                                                                        "building2_pgon"
+                                                                                    ]
+                                                                                },
+                                                                                {
+                                                                                    "name": "distance",
+                                                                                    "value": "5",
+                                                                                    "jsValue": "5",
+                                                                                    "invalidVar": false,
+                                                                                    "linked": false,
+                                                                                    "usedVars": []
+                                                                                },
+                                                                                {
+                                                                                    "name": "divisions",
+                                                                                    "value": "1",
+                                                                                    "jsValue": "1",
+                                                                                    "usedVars": [],
+                                                                                    "invalidVar": false,
+                                                                                    "linked": false
+                                                                                },
+                                                                                {
+                                                                                    "name": "method",
+                                                                                    "value": "'quads'",
+                                                                                    "jsValue": "'quads'",
+                                                                                    "usedVars": [],
+                                                                                    "invalidVar": false,
+                                                                                    "linked": false
+                                                                                }
+                                                                            ],
+                                                                            "selected": false,
+                                                                            "variable": "building2_ext",
+                                                                            "hasError": false,
+                                                                            "selectGeom": false
+                                                                        },
+                                                                        {
+                                                                            "type": 8,
+                                                                            "ID": "prod-qru0lfd83j",
+                                                                            "enabled": true,
+                                                                            "print": false,
+                                                                            "meta": {
+                                                                                "module": "modify",
+                                                                                "name": "Move"
+                                                                            },
+                                                                            "argCount": 4,
+                                                                            "args": [
+                                                                                {
+                                                                                    "name": "__none__",
+                                                                                    "linked": false
+                                                                                },
+                                                                                {
+                                                                                    "name": "__model__",
+                                                                                    "linked": false
+                                                                                },
+                                                                                {
+                                                                                    "name": "entities",
+                                                                                    "value": "building2_ext",
+                                                                                    "linked": false,
+                                                                                    "jsValue": "building2_ext_",
+                                                                                    "usedVars": [
+                                                                                        "building2_ext"
+                                                                                    ],
+                                                                                    "invalidVar": false
+                                                                                },
+                                                                                {
+                                                                                    "name": "vectors",
+                                                                                    "value": "[0, -(2.5 / 2), 0]",
+                                                                                    "linked": false,
+                                                                                    "invalidVar": false,
+                                                                                    "jsValue": "[0, -(2.5 / 2), 0]",
+                                                                                    "usedVars": []
+                                                                                }
+                                                                            ],
+                                                                            "selected": false,
+                                                                            "hasError": false,
+                                                                            "selectGeom": false
+                                                                        }
+                                                                    ],
+                                                                    "state": {
+                                                                        "procedure": []
+                                                                    },
+                                                                    "input": {
+                                                                        "name": "input",
+                                                                        "type": 0,
+                                                                        "edges": [
+                                                                            {
+                                                                                "source": "~flowchart~nodes~0~output",
+                                                                                "target": "~flowchart~nodes~0~output~edges~0~target~parentNode~output~edges~0~target~edges~1~source~parentNode~input",
+                                                                                "selected": false
+                                                                            }
+                                                                        ],
+                                                                        "meta": {
+                                                                            "mode": 0,
+                                                                            "opts": {}
+                                                                        },
+                                                                        "parentNode": "~flowchart~nodes~0~output~edges~0~target~parentNode~output~edges~0~target~edges~1~source~parentNode"
+                                                                    },
+                                                                    "output": "~flowchart~nodes~0~output~edges~0~target~parentNode~output~edges~0~target~edges~1~source",
+                                                                    "hasError": false,
+                                                                    "hasExecuted": true
+                                                                }
+                                                            },
+                                                            "target": "~flowchart~nodes~0~output~edges~0~target~parentNode~output~edges~0~target",
+                                                            "selected": false
+                                                        }
+                                                    ],
+                                                    "meta": {
+                                                        "mode": 0,
+                                                        "opts": {}
+                                                    },
+                                                    "parentNode": {
+                                                        "name": "End",
+                                                        "id": "node_qr1dtyh2xio",
+                                                        "position": {
+                                                            "x": 5340,
+                                                            "y": 5400
+                                                        },
+                                                        "enabled": true,
+                                                        "type": "end",
+                                                        "procedure": [
+                                                            {
+                                                                "type": 13,
+                                                                "ID": "",
+                                                                "meta": {
+                                                                    "name": "",
+                                                                    "module": ""
+                                                                },
+                                                                "argCount": 0,
+                                                                "args": [],
+                                                                "print": false,
+                                                                "enabled": true,
+                                                                "selected": false,
+                                                                "selectGeom": false,
+                                                                "hasError": false
+                                                            },
+                                                            {
+                                                                "type": 11,
+                                                                "ID": "Return",
+                                                                "meta": {
+                                                                    "name": "",
+                                                                    "module": ""
+                                                                },
+                                                                "argCount": 2,
+                                                                "args": [
+                                                                    {
+                                                                        "name": "__model__",
+                                                                        "value": "",
+                                                                        "jsValue": "",
+                                                                        "linked": false
+                                                                    },
+                                                                    {
+                                                                        "name": "value",
+                                                                        "value": "",
+                                                                        "jsValue": "",
+                                                                        "linked": false
+                                                                    }
+                                                                ],
+                                                                "print": false,
+                                                                "enabled": true,
+                                                                "selected": false,
+                                                                "selectGeom": false,
+                                                                "hasError": false
+                                                            }
+                                                        ],
+                                                        "state": {
+                                                            "procedure": []
+                                                        },
+                                                        "input": "~flowchart~nodes~0~output~edges~0~target~parentNode~output~edges~0~target",
+                                                        "output": {
+                                                            "name": "output",
+                                                            "type": 1,
+                                                            "edges": [],
+                                                            "meta": {
+                                                                "mode": 0
+                                                            },
+                                                            "parentNode": "~flowchart~nodes~0~output~edges~0~target~parentNode~output~edges~0~target~parentNode"
+                                                        },
+                                                        "hasError": false,
+                                                        "hasExecuted": true
+                                                    }
+                                                },
+                                                "selected": false
+                                            }
+                                        ],
+                                        "meta": {
+                                            "mode": 0
+                                        },
+                                        "parentNode": "~flowchart~nodes~0~output~edges~0~target~parentNode"
+                                    },
+                                    "hasError": false,
+                                    "hasExecuted": true
+                                }
+                            },
+                            "selected": false
+                        },
+                        "~flowchart~nodes~0~output~edges~0~target~parentNode~output~edges~0~target~edges~1~source~parentNode~input~edges~0"
+                    ],
+                    "meta": {
+                        "mode": 0
+                    },
+                    "parentNode": "~flowchart~nodes~0"
+                },
+                "hasError": false,
+                "hasExecuted": true
+            },
+            "~flowchart~nodes~0~output~edges~0~target~parentNode",
+            "~flowchart~nodes~0~output~edges~0~target~parentNode~output~edges~0~target~edges~1~source~parentNode",
+            "~flowchart~nodes~0~output~edges~0~target~parentNode~output~edges~0~target~parentNode"
+        ],
+        "edges": [
+            "~flowchart~nodes~0~output~edges~0",
+            "~flowchart~nodes~0~output~edges~0~target~parentNode~output~edges~0",
+            "~flowchart~nodes~0~output~edges~0~target~parentNode~output~edges~0~target~edges~1",
+            "~flowchart~nodes~0~output~edges~0~target~parentNode~output~edges~0~target~edges~1~source~parentNode~input~edges~0"
+        ],
+        "functions": [],
+        "ordered": true,
+        "last_updated": "2019-10-26T03:46:45.169Z"
+    },
+    "version": 3,
+    "settings": "{\"normals\":{\"show\":false,\"size\":5},\"axes\":{\"show\":true,\"size\":50},\"grid\":{\"show\":true,\"size\":500,\"pos_x\":0,\"pos_y\":0,\"pos_z\":0,\"pos\":{\"x\":0,\"y\":0,\"z\":0}},\"positions\":{\"show\":true,\"size\":0.5},\"tjs_summary\":{\"show\":false},\"gi_summary\":{\"show\":false},\"wireframe\":{\"show\":false},\"camera\":{\"pos\":{\"x\":-80,\"y\":-80,\"z\":80},\"pos_x\":-80,\"pos_y\":-80,\"pos_z\":80,\"target\":{\"x\":0,\"y\":0,\"z\":0}},\"colors\":{\"viewer_bg\":\"#E6E6E6\",\"position\":\"#000000\",\"position_s\":\"#0033FF\",\"vertex_s\":\"#FFCC00\",\"face_f\":\"#FFFFFF\",\"face_f_s\":\"#4949BD\",\"face_b\":\"#DDDDDD\",\"face_b_s\":\"#00006D\"},\"ambient_light\":{\"show\":true,\"color\":\"#FFFFFF\",\"intensity\":0.5},\"hemisphere_light\":{\"show\":true,\"helper\":false,\"skyColor\":\"#FFFFFF\",\"groundColor\":\"#FFFFFF\",\"intensity\":0.5},\"directional_light\":{\"show\":false,\"helper\":false,\"color\":\"#FFFFFF\",\"intensity\":1,\"shadow\":true,\"azimuth\":90,\"altitude\":45,\"distance\":10,\"type\":\"directional\"},\"ground\":{\"show\":false,\"width\":1000,\"length\":1000,\"height\":-0.5,\"color\":\"#FFFFFF\",\"shininess\":0},\"select\":{\"selector\":{\"id\":5,\"name\":\"Faces\"},\"tab\":\"0\"},\"version\":\"0.5.10\"}"
+}
