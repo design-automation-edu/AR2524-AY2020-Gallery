@@ -1,0 +1,13 @@
+#pycache
+__pycache__
+*.pyc
+
+#student and module information
+*.xlsx
+*.csv
+MODULE_CONSTS.py
+*.json
+
+#data cleanup and vis
+*.ipynb
+RebuildIMGs

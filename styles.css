@@ -1,0 +1,417 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu+Mono&display=swap');
+
+body {
+    background-color: #FAFAFB;
+    font-family: 'Ubuntu Mono', monospace;
+    white-space: nowrap;
+    margin: 0 0 2em 2em;
+    margin-right: 2em;
+    min-width: calc(700px - 4em);
+    overflow: hidden;
+}
+
+h1 {
+    padding-left: 0.5em;
+    margin: 1em 0;
+}
+
+main {
+    display: flex;
+    flex-flow: row nowrap;
+    width: 100%;
+}
+
+article {
+    flex: 1;
+    max-width: 100%;
+}
+
+.aside__settings {
+    flex: 0.2;
+    box-sizing: border-box;
+    margin: 2em 0;
+    max-width: 0;
+}
+
+.aside__section {
+    height: calc(100% + 2em);
+    padding-left: 1em;
+    display: none;
+    flex-flow: column nowrap;
+    background-color: #FAFAFB;
+    box-sizing: border-box;
+}
+
+.aside__settings nav{
+    max-width: inherit;
+}
+
+.aside__header {
+    min-height: 3em;
+    max-height: 3em;
+    background-color: #CCCCCC;
+    box-sizing: border-box;
+    border-bottom: 2px solid #B3B3B3;
+    padding: 1em;
+}
+
+.aside__footer {
+    padding: 1em;
+    flex: 1;
+    background-color: #CCCCCC;
+}
+
+.import_grp {
+    text-align: center;
+}
+
+.import_grp span {
+    width: 100%;
+    font-size: small;
+}
+
+.file__loaded__name:hover {
+    text-decoration: underline;
+    cursor:pointer;
+}
+
+.grade_fn__container {
+    border-top: 2px solid #B3B3B3;
+    padding: 1em 0;
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.grade_fn__args {
+    display: inline-block;
+}
+
+.aside__arg {
+    background-color: #E6E6E6;
+    max-width: 2em;
+    border: none;
+    margin: 0 0.5em;
+}
+
+.aside__btn {
+    border: 1px solid rgb(169, 169, 169);
+    background-color: #CCCCCC;
+    font-size: small;
+    margin-right: 1em;
+    padding: 1px 1em;
+    height: 100%;
+    text-align: center;
+    font-size: small;
+    box-sizing: border-box;
+    min-width: 30%;
+    max-width: 30%;
+}
+
+.aside__btn:hover {
+    background-color:#E6E6E6;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+nav {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.btn_grp {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.btn {
+    padding: 0.5em 0;
+    cursor: pointer;
+    background-color: #B3B3B3;
+    display: flex;
+    min-width: 4em;
+    margin: 0 0.75em 0 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.btn:hover {
+    font-weight: 600;
+}
+
+.btn span {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 0 0.5em;
+}
+
+.selected__grp {
+    background-color: #CCCCCC;
+}
+
+.btn_settings {
+    margin: 0px 0px 3px 0px;
+    display: inline-block;
+    max-width: 7em;
+    min-width: 7em;
+    background-color: #E6E6E6;
+    padding: 0.5em 1em;
+    text-align: center;
+    direction: rtl;
+    font-size: small;
+    position: absolute;
+    top: 2.5em;
+    right: 2.5em;
+}
+
+.btn_settings:hover {
+    background-color:#CCCCCC;
+}
+
+section {
+    width: 100%;
+    background-color: #CCCCCC;
+}
+
+.section__banner {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    padding: 1em;
+    border-bottom: 2px solid #B3B3B3;
+    height: 3em;
+    box-sizing: border-box;
+}
+
+#info {
+    width: 70%;
+    overflow: hidden;
+    height: 1.5em;
+}
+
+#TA {
+    margin: 0;
+}
+
+.temp_msg {
+    font-size: small;
+    margin-right: 2em;
+    text-overflow: ellipsis;
+}
+
+#sort_toggle_btn {
+    text-decoration: underline;
+    cursor: pointer;
+    text-transform: lowercase;
+    font-size: small;
+}
+
+#sort_toggle_btn:hover {
+    color: blue;
+}
+
+#dropdown {
+    font-family: 'Ubuntu Mono', monospace;
+    flex: 0.5;
+    background-color: #CCCCCC;
+    text-transform: lowercase;
+}
+
+#dropdown:hover {
+    background-color: #E6E6E6;
+}
+.section__figs {
+    padding-right: 1em;
+    max-height: calc(100vh - 11em);
+    min-height: calc(100vh - 11em);
+    padding-bottom: 3em;
+    box-sizing: border-box;
+    overflow: auto;
+}
+
+.container__figs {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(316px,1fr));
+    overflow: hidden;
+}
+
+figure {
+    width: 300px;
+    box-sizing: border-box;
+    margin: 0;
+    margin: 1em;
+    border: 3px solid #E6E6E6;
+}
+
+figure img {
+    width: 100%;
+    opacity: 0.75;
+    filter: saturate(80%);
+}
+
+a {
+    box-sizing: border-box;
+    height: 100%;
+    width: calc(100% - 2em)
+}
+
+a div {
+    position: absolute;
+    width: calc(300px - 2em)
+}
+
+a div span {
+    display: none;
+    position: relative;
+    width: 100%;
+    bottom: 1.5em;
+    direction: rtl;
+    color: black;
+    padding-right: 0.5em;
+    box-sizing: border-box;
+}
+figure:hover {
+    box-shadow: 2.5px 5px #888888;
+}
+
+figure:hover img {
+    opacity: 1;
+    filter: saturate(100%);
+}
+
+figure:hover figcaption {
+    font-weight: 600;
+}
+
+figure label {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0.25em;
+    box-sizing: border-box;
+}
+
+figure .slow, .error {
+    background-color: #E94858 !important;
+}
+
+figure .error {
+    background-color: red !important;
+}
+
+figure .medium, .warning {
+    background-color: #F3A32A !important;
+}
+
+figure .fast {
+    background-color: rgb(130, 191, 110); 
+}
+
+figcaption {
+    display: flex;
+    flex: row nowrap;
+    justify-content: space-between;
+    flex: 1;
+}
+
+figcaption span{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 80%;
+}
+
+.bump {
+    height: 1em;
+    margin: 0 0 0 0.25em;
+    background-color: #FAFAFB;
+    max-width: 1.5em;
+    position: relative;
+}
+
+.bump:hover {
+    cursor: pointer;
+}
+
+.bump:hover .arrow {
+    border-color: black;
+}
+
+.arrow {
+    z-index: 10;
+    border: solid #888888;
+    border-width: 0 1px 1px 0;
+    display: inline-block;
+    padding: 3px;
+    position: relative;
+    left: 0.4em;
+}
+
+.up {
+    transform: rotate(-135deg);
+    bottom: 0.2em;
+}
+
+.down {
+    transform: rotate(45deg);
+    bottom: 0.4em;
+}
+
+.table__grade {
+    width: 100%;
+    margin: 0.5em 0 1em 0;
+    color: #484848;
+}
+
+#To_3:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.default__editable {
+    background-color: #d6d6d6;
+}
+
+.default__editable:hover {
+    cursor: text;
+}
+
+.selected__column.tbl__header{
+    text-decoration: underline;
+}
+
+.cell {
+    cursor: default;
+}
+
+.header__selectable:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.editable {
+    background-color: #E6E6E6;
+    color: black;
+}
+
+.editable:hover {
+    cursor: text;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+    margin-left: 2px;
+}
+
+::-webkit-scrollbar-track {
+    background: #CCCCCC; 
+}
+
+::-webkit-scrollbar-thumb {
+    background: #E6E6E6; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #B3B3B3; 
+}

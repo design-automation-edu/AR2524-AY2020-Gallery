@@ -1,0 +1,404 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>AR2524 Project Gallery</title>
+		<link rel='stylesheet' type='text/css' href='styles.css'></link>
+		<script src='script.js'></script>
+	</head>
+	<body>
+		<header>
+	<h1>AR2524 Project Gallery</h1>
+		</header>
+		<main>
+			<article class='main__article'>
+				<nav>
+					<div class='btn_grp'>
+						<div id='ALL' onclick='filter_group(this)' class='btn selected__grp filter__btn'>
+							<span>ALL</span>
+						</div>
+						<div id='G1_fbtn' onclick='filter_group(this)' class='btn filter__btn'>
+							<span>G1</span>
+						</div>
+						<div id='G2_fbtn' onclick='filter_group(this)' class='btn filter__btn'>
+							<span>G2</span>
+						</div>
+						<div id='G3_fbtn' onclick='filter_group(this)' class='btn filter__btn'>
+							<span>G3</span>
+						</div>
+						<div id='G4_fbtn' onclick='filter_group(this)' class='btn filter__btn'>
+							<span>G4</span>
+						</div>
+						<div id='G5_fbtn' onclick='filter_group(this)' class='btn filter__btn'>
+							<span>G5</span>
+						</div>
+						<div id='G6_fbtn' onclick='filter_group(this)' class='btn filter__btn'>
+							<span>G6</span>
+						</div>
+					</div>
+				</nav>
+				<section class='article__section'>
+					<header class='section__banner'>
+						<div id='info'>
+							<h3 id='TA'></h3>
+						</div>
+						<div>
+							<span id='sort_toggle_btn' onclick='toggle_asc()'>ASCENDING</span>
+							<select id='dropdown' onchange='sort_figures()'>
+								<optgroup label='Basic'>
+									<option value='byName'>Name</option>
+									<option value='byGroup'>Group</option>
+								</optgroup>
+							</select>
+						</div>
+					</header>
+					<footer class='section__figs'>
+						<div class='container__figs'>
+							<figure id='A0166650A' style='display: none' class='fast' data-name = 'RAYNARD YU JUN KIAT' data-group = 'G1'>
+								<label class='fast'>
+									<span>fast</span>
+									<span id=A0166650A_bdwn class='breakdown'></span>
+								</label>
+								<a href='https://design-automation.github.io/mobius-parametric-modeller-0-5-6/dashboard?file=_aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL3BrZXJlZC9BUjI1MjQtUHJvamVjdC1HYWxsZXJ5L21hc3Rlci9GaW5hbFByb2plY3QvVHV0b3JpYWwlMjBHcm91cCUyMDEvQTAxNjY2NTBBX1JheW5hcmRfWXVfSnVuX0tpYXQubW9i' target=_blank>
+									<img src='FinalProject/Tutorial Group 1/A0166650A_Raynard_Yu_Jun_Kiat.png'></img>
+								</a>
+								<figcaption>
+									<span>G1 RAYNARD YU JUN KIAT</span>
+								</figcaption>
+							</figure>
+							<figure id='A0183165A' style='display: none' class='fast' data-name = 'LIM GUAN JIE OLIVER' data-group = 'G1'>
+								<label class='fast'>
+									<span>fast</span>
+									<span id=A0183165A_bdwn class='breakdown'></span>
+								</label>
+								<a href='https://design-automation.github.io/mobius-parametric-modeller-0-5-6/dashboard?file=_aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL3BrZXJlZC9BUjI1MjQtUHJvamVjdC1HYWxsZXJ5L21hc3Rlci9GaW5hbFByb2plY3QvVHV0b3JpYWwlMjBHcm91cCUyMDEvQTAxODMxNjVBX0xpbV9HdWFuX0ppZV9PbGl2ZXIubW9i' target=_blank>
+									<img src='FinalProject/Tutorial Group 1/A0183165A_Lim_Guan_Jie_Oliver.png'></img>
+								</a>
+								<figcaption>
+									<span>G1 LIM GUAN JIE OLIVER</span>
+								</figcaption>
+							</figure>
+							<figure id='A0189548H' style='display: none' class='fast' data-name = 'CHAN SHAO KAYE' data-group = 'G1'>
+								<label class='fast'>
+									<span>fast</span>
+									<span id=A0189548H_bdwn class='breakdown'></span>
+								</label>
+								<a href='https://design-automation.github.io/mobius-parametric-modeller-0-5-6/dashboard?file=_aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL3BrZXJlZC9BUjI1MjQtUHJvamVjdC1HYWxsZXJ5L21hc3Rlci9GaW5hbFByb2plY3QvVHV0b3JpYWwlMjBHcm91cCUyMDEvQTAxODk1NDhIX0NoYW5fU2hhb19LYXllLm1vYg==' target=_blank>
+									<img src='FinalProject/Tutorial Group 1/A0189548H_Chan_Shao_Kaye.png'></img>
+								</a>
+								<figcaption>
+									<span>G1 CHAN SHAO KAYE</span>
+								</figcaption>
+							</figure>
+							<figure id='A0201523Y' style='display: none' class='fast' data-name = 'JASPER PHANG WEE KEAT' data-group = 'G1'>
+								<label class='fast'>
+									<span>fast</span>
+									<span id=A0201523Y_bdwn class='breakdown'></span>
+								</label>
+								<a href='https://design-automation.github.io/mobius-parametric-modeller-0-5-6/dashboard?file=_aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL3BrZXJlZC9BUjI1MjQtUHJvamVjdC1HYWxsZXJ5L21hc3Rlci9GaW5hbFByb2plY3QvVHV0b3JpYWwlMjBHcm91cCUyMDEvQTAyMDE1MjNZX0phc3Blcl9QaGFuZ19XZWVfS2VhdC5tb2I=' target=_blank>
+									<img src='FinalProject/Tutorial Group 1/A0201523Y_Jasper_Phang_Wee_Keat.png'></img>
+								</a>
+								<figcaption>
+									<span>G1 JASPER PHANG WEE KEAT</span>
+								</figcaption>
+							</figure>
+							<figure id='A0209262J' style='display: none' class='fast' data-name = 'TAY YU JIE' data-group = 'G1'>
+								<label class='fast'>
+									<span>fast</span>
+									<span id=A0209262J_bdwn class='breakdown'></span>
+								</label>
+								<a href='https://design-automation.github.io/mobius-parametric-modeller-0-5-6/dashboard?file=_aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL3BrZXJlZC9BUjI1MjQtUHJvamVjdC1HYWxsZXJ5L21hc3Rlci9GaW5hbFByb2plY3QvVHV0b3JpYWwlMjBHcm91cCUyMDEvQTAyMDkyNjJKX1RheV9ZdV9KaWUubW9i' target=_blank>
+									<img src='FinalProject/Tutorial Group 1/A0209262J_Tay_Yu_Jie.png'></img>
+								</a>
+								<figcaption>
+									<span>G1 TAY YU JIE</span>
+								</figcaption>
+							</figure>
+							<figure id='A0169821X' style='display: none' class='fast' data-name = 'IAN TAY ZHE JUN' data-group = 'G2'>
+								<label class='fast'>
+									<span>fast</span>
+									<span id=A0169821X_bdwn class='breakdown'></span>
+								</label>
+								<a href='https://design-automation.github.io/mobius-parametric-modeller-0-5-6/dashboard?file=_aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL3BrZXJlZC9BUjI1MjQtUHJvamVjdC1HYWxsZXJ5L21hc3Rlci9GaW5hbFByb2plY3QvVHV0b3JpYWwlMjBHcm91cCUyMDIvQTAxNjk4MjFYX2lhbl90YXkubW9i' target=_blank>
+									<img src='FinalProject/Tutorial Group 2/A0169821X_ian_tay.png'></img>
+								</a>
+								<figcaption>
+									<span>G2 IAN TAY ZHE JUN</span>
+								</figcaption>
+							</figure>
+							<figure id='A0183321N' style='display: none' class='fast' data-name = 'GERRELL CHEE YI LUN' data-group = 'G2'>
+								<label class='fast'>
+									<span>fast</span>
+									<span id=A0183321N_bdwn class='breakdown'></span>
+								</label>
+								<a href='https://design-automation.github.io/mobius-parametric-modeller-0-5-6/dashboard?file=_aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL3BrZXJlZC9BUjI1MjQtUHJvamVjdC1HYWxsZXJ5L21hc3Rlci9GaW5hbFByb2plY3QvVHV0b3JpYWwlMjBHcm91cCUyMDIvQTAxODMzMjFOX0dlcnJlbGxfQ2hlZS5tb2I=' target=_blank>
+									<img src='FinalProject/Tutorial Group 2/A0183321N_Gerrell_Chee.png'></img>
+								</a>
+								<figcaption>
+									<span>G2 GERRELL CHEE YI LUN</span>
+								</figcaption>
+							</figure>
+							<figure id='A0184461A' style='display: none' class='fast' data-name = 'LIU LINXIN' data-group = 'G2'>
+								<label class='fast'>
+									<span>fast</span>
+									<span id=A0184461A_bdwn class='breakdown'></span>
+								</label>
+								<a href='https://design-automation.github.io/mobius-parametric-modeller-0-5-6/dashboard?file=_aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL3BrZXJlZC9BUjI1MjQtUHJvamVjdC1HYWxsZXJ5L21hc3Rlci9GaW5hbFByb2plY3QvVHV0b3JpYWwlMjBHcm91cCUyMDIvQTAxODQ0NjFBX0xpdV9saW54aW4ubW9i' target=_blank>
+									<img src='FinalProject/Tutorial Group 2/A0184461A_Liu_linxin.png'></img>
+								</a>
+								<figcaption>
+									<span>G2 LIU LINXIN</span>
+								</figcaption>
+							</figure>
+							<figure id='A0190074J' style='display: none' class='fast' data-name = 'EVE LEE SHI' data-group = 'G2'>
+								<label class='fast'>
+									<span>fast</span>
+									<span id=A0190074J_bdwn class='breakdown'></span>
+								</label>
+								<a href='https://design-automation.github.io/mobius-parametric-modeller-0-5-6/dashboard?file=_aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL3BrZXJlZC9BUjI1MjQtUHJvamVjdC1HYWxsZXJ5L21hc3Rlci9GaW5hbFByb2plY3QvVHV0b3JpYWwlMjBHcm91cCUyMDIvQTAxOTAwNzRKX0V2ZV9MZWVfU2hpXygxKS5tb2I=' target=_blank>
+									<img src='FinalProject/Tutorial Group 2/A0190074J_Eve_Lee_Shi_(1).png'></img>
+								</a>
+								<figcaption>
+									<span>G2 EVE LEE SHI</span>
+								</figcaption>
+							</figure>
+							<figure id='A0183169W' style='display: none' class='fast' data-name = 'LIM KUN YI JAMES' data-group = 'G3'>
+								<label class='fast'>
+									<span>fast</span>
+									<span id=A0183169W_bdwn class='breakdown'></span>
+								</label>
+								<a href='https://design-automation.github.io/mobius-parametric-modeller-0-5-6/dashboard?file=_aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL3BrZXJlZC9BUjI1MjQtUHJvamVjdC1HYWxsZXJ5L21hc3Rlci9GaW5hbFByb2plY3QvVHV0b3JpYWwlMjBHcm91cCUyMDMvQTAxODMxNjlXX0phbWVzX0xpbSUyMCg2KS5tb2I=' target=_blank>
+									<img src='FinalProject/Tutorial Group 3/A0183169W_James_Lim (6).png'></img>
+								</a>
+								<figcaption>
+									<span>G3 LIM KUN YI JAMES</span>
+								</figcaption>
+							</figure>
+							<figure id='A0182627Y' style='display: none' class='fast' data-name = 'KEE CHEOW YAN' data-group = 'G4'>
+								<label class='fast'>
+									<span>fast</span>
+									<span id=A0182627Y_bdwn class='breakdown'></span>
+								</label>
+								<a href='https://design-automation.github.io/mobius-parametric-modeller-0-5-6/dashboard?file=_aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL3BrZXJlZC9BUjI1MjQtUHJvamVjdC1HYWxsZXJ5L21hc3Rlci9GaW5hbFByb2plY3QvVHV0b3JpYWwlMjBHcm91cCUyMDQvQTAxODI2MjdZX0tlZV9DaGVvd19ZYW4ubW9i' target=_blank>
+									<img src='FinalProject/Tutorial Group 4/A0182627Y_Kee_Cheow_Yan.png'></img>
+								</a>
+								<figcaption>
+									<span>G4 KEE CHEOW YAN</span>
+								</figcaption>
+							</figure>
+							<figure id='A0187786A' style='display: none' class='fast' data-name = 'NG HUEI YING' data-group = 'G4'>
+								<label class='fast'>
+									<span>fast</span>
+									<span id=A0187786A_bdwn class='breakdown'></span>
+								</label>
+								<a href='https://design-automation.github.io/mobius-parametric-modeller-0-5-6/dashboard?file=_aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL3BrZXJlZC9BUjI1MjQtUHJvamVjdC1HYWxsZXJ5L21hc3Rlci9GaW5hbFByb2plY3QvVHV0b3JpYWwlMjBHcm91cCUyMDQvQTAxODc3ODZBX05nX0h1ZWlfWWluZy5tb2I=' target=_blank>
+									<img src='FinalProject/Tutorial Group 4/A0187786A_Ng_Huei_Ying.png'></img>
+								</a>
+								<figcaption>
+									<span>G4 NG HUEI YING</span>
+								</figcaption>
+							</figure>
+							<figure id='A0190041W' style='display: none' class='fast' data-name = 'LIM SHI-YI MATTHEW' data-group = 'G4'>
+								<label class='fast'>
+									<span>fast</span>
+									<span id=A0190041W_bdwn class='breakdown'></span>
+								</label>
+								<a href='https://design-automation.github.io/mobius-parametric-modeller-0-5-6/dashboard?file=_aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL3BrZXJlZC9BUjI1MjQtUHJvamVjdC1HYWxsZXJ5L21hc3Rlci9GaW5hbFByb2plY3QvVHV0b3JpYWwlMjBHcm91cCUyMDQvQTAxOTAwNDFXX0xpbV9TaGlfWWlfTWF0dGhldy5tb2I=' target=_blank>
+									<img src='FinalProject/Tutorial Group 4/A0190041W_Lim_Shi_Yi_Matthew.png'></img>
+								</a>
+								<figcaption>
+									<span>G4 LIM SHI-YI MATTHEW</span>
+								</figcaption>
+							</figure>
+							<figure id='A0200456R' style='display: none' class='fast' data-name = 'SAW TIAN AIK' data-group = 'G4'>
+								<label class='fast'>
+									<span>fast</span>
+									<span id=A0200456R_bdwn class='breakdown'></span>
+								</label>
+								<a href='https://design-automation.github.io/mobius-parametric-modeller-0-5-6/dashboard?file=_aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL3BrZXJlZC9BUjI1MjQtUHJvamVjdC1HYWxsZXJ5L21hc3Rlci9GaW5hbFByb2plY3QvVHV0b3JpYWwlMjBHcm91cCUyMDQvQTAyMDA0NTZSX1Nhd19UaWFuX0Fpay5tb2I=' target=_blank>
+									<img src='FinalProject/Tutorial Group 4/A0200456R_Saw_Tian_Aik.png'></img>
+								</a>
+								<figcaption>
+									<span>G4 SAW TIAN AIK</span>
+								</figcaption>
+							</figure>
+							<figure id='A0182996H' style='display: none' class='fast' data-name = 'LIM WEN JIE' data-group = 'G5'>
+								<label class='fast'>
+									<span>fast</span>
+									<span id=A0182996H_bdwn class='breakdown'></span>
+								</label>
+								<a href='https://design-automation.github.io/mobius-parametric-modeller-0-5-6/dashboard?file=_aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL3BrZXJlZC9BUjI1MjQtUHJvamVjdC1HYWxsZXJ5L21hc3Rlci9GaW5hbFByb2plY3QvVHV0b3JpYWwlMjBHcm91cCUyMDUvQTAxODI5OTZIX0xpbV9XZW5fSmllLm1vYg==' target=_blank>
+									<img src='FinalProject/Tutorial Group 5/A0182996H_Lim_Wen_Jie.png'></img>
+								</a>
+								<figcaption>
+									<span>G5 LIM WEN JIE</span>
+								</figcaption>
+							</figure>
+							<figure id='A0183231N' style='display: none' class='fast' data-name = 'CHEN BO HAN' data-group = 'G5'>
+								<label class='fast'>
+									<span>fast</span>
+									<span id=A0183231N_bdwn class='breakdown'></span>
+								</label>
+								<a href='https://design-automation.github.io/mobius-parametric-modeller-0-5-6/dashboard?file=_aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL3BrZXJlZC9BUjI1MjQtUHJvamVjdC1HYWxsZXJ5L21hc3Rlci9GaW5hbFByb2plY3QvVHV0b3JpYWwlMjBHcm91cCUyMDUvQTAxODMyMzFOX0NoZW5fQm9fSGFuLm1vYg==' target=_blank>
+									<img src='FinalProject/Tutorial Group 5/A0183231N_Chen_Bo_Han.png'></img>
+								</a>
+								<figcaption>
+									<span>G5 CHEN BO HAN</span>
+								</figcaption>
+							</figure>
+							<figure id='A0183480A' style='display: none' class='fast' data-name = 'SU YUNG EN' data-group = 'G5'>
+								<label class='fast'>
+									<span>fast</span>
+									<span id=A0183480A_bdwn class='breakdown'></span>
+								</label>
+								<a href='https://design-automation.github.io/mobius-parametric-modeller-0-5-6/dashboard?file=_aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL3BrZXJlZC9BUjI1MjQtUHJvamVjdC1HYWxsZXJ5L21hc3Rlci9GaW5hbFByb2plY3QvVHV0b3JpYWwlMjBHcm91cCUyMDUvQTAxODM0ODBBX1N1JTIwWXVuZyUyMEVuLm1vYg==' target=_blank>
+									<img src='FinalProject/Tutorial Group 5/A0183480A_Su Yung En.png'></img>
+								</a>
+								<figcaption>
+									<span>G5 SU YUNG EN</span>
+								</figcaption>
+							</figure>
+							<figure id='A0188472R' style='display: none' class='fast' data-name = 'NABILA FATHARANI AZKA' data-group = 'G5'>
+								<label class='fast'>
+									<span>fast</span>
+									<span id=A0188472R_bdwn class='breakdown'></span>
+								</label>
+								<a href='https://design-automation.github.io/mobius-parametric-modeller-0-5-6/dashboard?file=_aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL3BrZXJlZC9BUjI1MjQtUHJvamVjdC1HYWxsZXJ5L21hc3Rlci9GaW5hbFByb2plY3QvVHV0b3JpYWwlMjBHcm91cCUyMDUvQTAxODg0NzJSX05hYmlsYV9GYXRoYXJhbmlfQXprYS5tb2I=' target=_blank>
+									<img src='FinalProject/Tutorial Group 5/A0188472R_Nabila_Fatharani_Azka.png'></img>
+								</a>
+								<figcaption>
+									<span>G5 NABILA FATHARANI AZKA</span>
+								</figcaption>
+							</figure>
+							<figure id='A0200380Y' style='display: none' class='medium' data-name = 'ISAAC TAN HUNG' data-group = 'G5'>
+								<label class='medium'>
+									<span>medium</span>
+									<span id=A0200380Y_bdwn class='breakdown'></span>
+								</label>
+								<a href='https://design-automation.github.io/mobius-parametric-modeller-0-5-6/dashboard?file=_aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL3BrZXJlZC9BUjI1MjQtUHJvamVjdC1HYWxsZXJ5L21hc3Rlci9GaW5hbFByb2plY3QvVHV0b3JpYWwlMjBHcm91cCUyMDUvQTAyMDAzODBZX0lTQUFDX1RBTl9IVU5HLm1vYg==' target=_blank>
+									<img src='FinalProject/Tutorial Group 5/A0200380Y_ISAAC_TAN_HUNG.png'></img>
+								</a>
+								<figcaption>
+									<span>G5 ISAAC TAN HUNG</span>
+								</figcaption>
+							</figure>
+							<figure id='A0209230U' style='display: none' class='fast' data-name = 'DELA CRUZ JOHN ANTHONY BORLONGAN' data-group = 'G5'>
+								<label class='fast'>
+									<span>fast</span>
+									<span id=A0209230U_bdwn class='breakdown'></span>
+								</label>
+								<a href='https://design-automation.github.io/mobius-parametric-modeller-0-5-6/dashboard?file=_aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL3BrZXJlZC9BUjI1MjQtUHJvamVjdC1HYWxsZXJ5L21hc3Rlci9GaW5hbFByb2plY3QvVHV0b3JpYWwlMjBHcm91cCUyMDUvQTAyMDkyMzBVX0RlbGElMjBDcnV6JTIwSm9obiUyMEFudGhvbnkubW9i' target=_blank>
+									<img src='FinalProject/Tutorial Group 5/A0209230U_Dela Cruz John Anthony.png'></img>
+								</a>
+								<figcaption>
+									<span>G5 DELA CRUZ JOHN ANTHONY BORLONGAN</span>
+								</figcaption>
+							</figure>
+							<figure id='A0164670A' style='display: none' class='fast' data-name = 'CHLOE LAU JIA YEE' data-group = 'G5'>
+								<label class='fast'>
+									<span>fast</span>
+									<span id=A0164670A_bdwn class='breakdown'></span>
+								</label>
+								<a href='https://design-automation.github.io/mobius-parametric-modeller-0-5-6/dashboard?file=_aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL3BrZXJlZC9BUjI1MjQtUHJvamVjdC1HYWxsZXJ5L21hc3Rlci9GaW5hbFByb2plY3QvVHV0b3JpYWwlMjBHcm91cCUyMDUvQTAxNjQ2NzBBLm1vYg==' target=_blank>
+									<img src='FinalProject/Tutorial Group 5/A0164670A.png'></img>
+								</a>
+								<figcaption>
+									<span>G5 CHLOE LAU JIA YEE</span>
+								</figcaption>
+							</figure>
+							<figure id='A0166862U' style='display: none' class='fast' data-name = 'HO JUN XUAN, BENEDICT' data-group = 'G6'>
+								<label class='fast'>
+									<span>fast</span>
+									<span id=A0166862U_bdwn class='breakdown'></span>
+								</label>
+								<a href='https://design-automation.github.io/mobius-parametric-modeller-0-5-6/dashboard?file=_aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL3BrZXJlZC9BUjI1MjQtUHJvamVjdC1HYWxsZXJ5L21hc3Rlci9GaW5hbFByb2plY3QvVHV0b3JpYWwlMjBHcm91cCUyMDYvQTAxNjY4NjJVX0JlbmVkaWN0X0hvLm1vYg==' target=_blank>
+									<img src='FinalProject/Tutorial Group 6/A0166862U_Benedict_Ho.png'></img>
+								</a>
+								<figcaption>
+									<span>G6 HO JUN XUAN, BENEDICT</span>
+								</figcaption>
+							</figure>
+							<figure id='A0181319E' style='display: none' class='slow' data-name = 'MAK JIA JING SHAUN' data-group = 'G6'>
+								<label class='slow'>
+									<span>slow</span>
+									<span id=A0181319E_bdwn class='breakdown'></span>
+								</label>
+								<a href='https://design-automation.github.io/mobius-parametric-modeller-0-5-6/dashboard?file=_aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL3BrZXJlZC9BUjI1MjQtUHJvamVjdC1HYWxsZXJ5L21hc3Rlci9GaW5hbFByb2plY3QvVHV0b3JpYWwlMjBHcm91cCUyMDYvQTAxODEzMTlFX01BS19KSUFfSklOR19TSEFVTi5tb2I=' target=_blank>
+									<img src='FinalProject/Tutorial Group 6/A0181319E_MAK_JIA_JING_SHAUN.png'></img>
+								</a>
+								<figcaption>
+									<span>G6 MAK JIA JING SHAUN</span>
+								</figcaption>
+							</figure>
+							<figure id='A0182882U' style='display: none' class='fast' data-name = 'NGA ZHI YUAN' data-group = 'G6'>
+								<label class='fast'>
+									<span>fast</span>
+									<span id=A0182882U_bdwn class='breakdown'></span>
+								</label>
+								<a href='https://design-automation.github.io/mobius-parametric-modeller-0-5-6/dashboard?file=_aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL3BrZXJlZC9BUjI1MjQtUHJvamVjdC1HYWxsZXJ5L21hc3Rlci9GaW5hbFByb2plY3QvVHV0b3JpYWwlMjBHcm91cCUyMDYvQTAxODI4ODJVLm1vYg==' target=_blank>
+									<img src='FinalProject/Tutorial Group 6/A0182882U.png'></img>
+								</a>
+								<figcaption>
+									<span>G6 NGA ZHI YUAN</span>
+								</figcaption>
+							</figure>
+							<figure id='A0189102J' style='display: none' class='fast' data-name = 'CHUNG ZHIWEI' data-group = 'G6'>
+								<label class='fast'>
+									<span>fast</span>
+									<span id=A0189102J_bdwn class='breakdown'></span>
+								</label>
+								<a href='https://design-automation.github.io/mobius-parametric-modeller-0-5-6/dashboard?file=_aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL3BrZXJlZC9BUjI1MjQtUHJvamVjdC1HYWxsZXJ5L21hc3Rlci9GaW5hbFByb2plY3QvVHV0b3JpYWwlMjBHcm91cCUyMDYvQTAxODkxMDJKX0NodW5nX1poaXdlaS5tb2I=' target=_blank>
+									<img src='FinalProject/Tutorial Group 6/A0189102J_Chung_Zhiwei.png'></img>
+								</a>
+								<figcaption>
+									<span>G6 CHUNG ZHIWEI</span>
+								</figcaption>
+							</figure>
+							<figure id='A0189435R' style='display: none' class='fast' data-name = 'TRACY TAI' data-group = 'G6'>
+								<label class='fast'>
+									<span>fast</span>
+									<span id=A0189435R_bdwn class='breakdown'></span>
+								</label>
+								<a href='https://design-automation.github.io/mobius-parametric-modeller-0-5-6/dashboard?file=_aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL3BrZXJlZC9BUjI1MjQtUHJvamVjdC1HYWxsZXJ5L21hc3Rlci9GaW5hbFByb2plY3QvVHV0b3JpYWwlMjBHcm91cCUyMDYvQTAxODk0MzVSX1RyYWN5X1RhaS5tb2I=' target=_blank>
+									<img src='FinalProject/Tutorial Group 6/A0189435R_Tracy_Tai.png'></img>
+								</a>
+								<figcaption>
+									<span>G6 TRACY TAI</span>
+								</figcaption>
+							</figure>
+							<figure id='A0209234L' style='display: none' class='fast' data-name = 'FONG SHEAN HUI' data-group = 'G6'>
+								<label class='fast'>
+									<span>fast</span>
+									<span id=A0209234L_bdwn class='breakdown'></span>
+								</label>
+								<a href='https://design-automation.github.io/mobius-parametric-modeller-0-5-6/dashboard?file=_aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL3BrZXJlZC9BUjI1MjQtUHJvamVjdC1HYWxsZXJ5L21hc3Rlci9GaW5hbFByb2plY3QvVHV0b3JpYWwlMjBHcm91cCUyMDYvQTAyMDkyMzRMX0ZvbmclMjBTaGVhbiUyMEh1aS5tb2I=' target=_blank>
+									<img src='FinalProject/Tutorial Group 6/A0209234L_Fong Shean Hui.png'></img>
+								</a>
+								<figcaption>
+									<span>G6 FONG SHEAN HUI</span>
+								</figcaption>
+							</figure>
+						</div>
+					</footer>
+				</section>
+			</article>
+			<aside class='aside__settings'>
+				<nav>
+					<div class='btn btn_settings' onclick='clk_settings()'>Settings</div>
+				</nav>
+				<section class='aside__section'>
+					<header class='aside__header'>
+						<div class='import_grp'>
+							<label id='import' class='aside__btn'>
+								<input type='file' id='selectFiles' value='Import' style='display: none' onchange='load_json()'></input>
+								<span>&#8673; Grades</span>
+							</label>
+						</div>
+					</header>
+					<footer class='aside__footer'>
+						<span id='import__fileName'>No File Loaded</span>
+					</footer>
+				</section>
+			</aside>
+		</main>
+	</body>
+</html>
